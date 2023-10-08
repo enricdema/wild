@@ -3,13 +3,13 @@ Wild Node
 Proyecto para Ofertas de viaje y nomades digitales
 
 
-3. Install dependencies
+1. Install dependencies
 
 ```bash
 npm install # or, yarn install
 ```
 
-4. Run the app
+2. Run the app
 
 ```bash
 npm run dev # or, yarn dev
