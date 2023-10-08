@@ -23,7 +23,7 @@ const CardModal = (props: Props) => {
     const handleClose = () => setOpen(false);
   return (
       <>
-    <button onClick={handleOpen} className='px-4 py-2 text-white font-semibold bg-secondary shadow-xl border-2 border-white rounded-2xl text-sm hover:bg-secondaryLighter transition-all ' >Learn More</button>
+    <button onClick={handleOpen} className='px-4 py-2 text-white font-semibold bg-secondary shadow-xl border-2 border-white rounded-2xl text-sm hover:bg-secondaryLighter transition-all ' >Leer más</button>
     <Modal
     open={open}
     onClose={handleClose}

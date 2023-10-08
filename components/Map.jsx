@@ -62,29 +62,29 @@ import { MapCard } from './MapCard';
 const Map = () => {
   return (
       <div className='w-full flex justify-center my-20'>
-    <MapContainer center={[30.3753, 69.3451]} zoom={6} scrollWheelZoom={false} className='h-[70vh] w-[80vw] rounded-2xl shadow-2xl'>
+    <MapContainer center={[-40.762976, -71.643485]} zoom={13} scrollWheelZoom={false} className='h-[70vh] w-[80vw] rounded-2xl shadow-2xl'>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-      <Marker icon={karachi} key={1} position={[24.8607, 67.0011]}>
+      <Marker icon={karachi} key={1} position={[-40.735922, -71.651278]}>
         <Popup closeButton={false} closeOnEscapeKey={true} >
-          <MapCard subTitle='metropolitan' img='/imgs/karachi.jpg' title='Karachi' desc='Karachi is the capital of the Pakistani province of Sindh. Situated on the Arabian Sea, Karachi serves as a transport hub, and is home to Pakistans two largest seaports.' />
+          <MapCard subTitle='apartamento' img='/imgs/casa1.jpeg' title='villa' desc='Karachi is the capital of the Pakistani province of Sindh. Situated on the Arabian Sea, Karachi serves as a transport hub, and is home to Pakistans two largest seaports.' />
         </Popup>
       </Marker>
-      <Marker  icon={faisalabad} key={2} position={[31.4220,73.0923]}>
+      <Marker  icon={faisalabad} key={2} position={[-40.787555, -71.614013]}>
         <Popup closeButton={false}>
-        <MapCard subTitle='metropolitan' img='/imgs/faisalabad.png' title='Faisalabad' desc='Faisalabad is famous for its food. The most common snack item samosas of Faisalabad are considered the best in Pakistan.' />
+        <MapCard subTitle='casa1' img='/imgs/casa1.jpeg' title='villa' desc='Faisalabad is famous for its food. The most common snack item samosas of Faisalabad are considered the best in Pakistan.' />
         </Popup>
       </Marker>
-      <Marker  icon={multan} key={3} position={[30.197979,71.472498]}>
+      <Marker  icon={multan} key={3} position={[-40.761227, -71.718083]}>
         <Popup closeButton={false}>
-        <MapCard subTitle='metropolitan' img='/imgs/multan.jpg' title='Multan' desc='In the Punjab on the banks of the Chenab River, Multan is almost in the centre of Pakistan, and one of the oldest cities in Asia.' />
+        <MapCard subTitle='metropolitan' img='/imgs/casa2.jpeg' title='Multan' desc='In the Punjab on the banks of the Chenab River, Multan is almost in the centre of Pakistan, and one of the oldest cities in Asia.' />
         </Popup>
       </Marker>
-      <Marker  icon={islamabad} key={4} position={[33.559707,73.168945]}>
+      <Marker  icon={islamabad} key={4} position={[+40.753654, -71.649233]}>
         <Popup closeButton={false}>
-        <MapCard subTitle='capital' img='/imgs/islamabad.jpg' title='Islamabad' desc='Islamabad is known for the presence of several parks and forests, including the Margalla Hills National Park and the Shakarparian.' />
+        <MapCard subTitle='csa2' img='/imgs/islamabad.jpg' title='villa' desc='Islamabad is known for the presence of several parks and forests, including the Margalla Hills National Park and the Shakarparian.' />
         </Popup>
       </Marker>
       <Marker  icon={peshawar} key={5} position={[34.0151,71.5249]}>
