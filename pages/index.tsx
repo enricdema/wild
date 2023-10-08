@@ -86,38 +86,38 @@ const Home: NextPage = () => {
         </div>
         <Map/>
         <div id='tours' ref={cards.ref} className={`flex flex-wrap justify-center transition-all duration-[1500ms] ease-out ${cards.inView ? 'opacity-100' : 'opacity-0'} `}>
-        <CardItem icon={<EmojiEmotionsIcon />} modalDesc={pakDesc} title='experience' desc='Explore the beauty of Pakistan with us today' img={img1} />
-        <CardItem icon={<SelfImprovementIcon />} modalDesc={pakDesc} title='relax' desc='Indulge in the relaxing atmosphere' img={img2} />
-        <CardItem icon={<LandscapeIcon />} modalDesc={pakDesc} title='embrace' desc='Let the scenery take your breath away' img={img3} />
+        <CardItem icon={<EmojiEmotionsIcon />} modalDesc={pakDesc} title='ALOJAMIENTO PARA CUALQUIER GRUPO' desc='Vivi en una casa de ensueño' img={img1} />
+        <CardItem icon={<SelfImprovementIcon />} modalDesc={pakDesc} title='COMIDA DE TODOS LOS TIPOS' desc='Deja que un chef venga a tu mesa' img={img2} />
+        <CardItem icon={<LandscapeIcon />} modalDesc={pakDesc} title='CULTURA Y NATURALEZA' desc='Conecta con tu alrededor' img={img3} />
         </div>
       </div>
       <div className='mt-40 relative'>
         <div ref={heading1.ref} className={`transition-all duration-[1000ms] ease-out ${heading1.inView ? 'translate-y-[0vh] opacity-100' : 'translate-y-[20vh] opacity-0'} `} >
-        <h4 className='text-xs lg:text-sm font-heading my-10 text-center w-full tracking-[10px] font-semibold'>TOUR DESTINATIONS</h4>
-        <h3 className='text-3xl lg:text-4xl my-10 tracking-wide w-full text-center capitalize font-extrabold'>Top tour destinations in pakistan</h3>
+        <h4 className='text-xs lg:text-sm font-heading my-10 text-center w-full tracking-[10px] font-semibold'>Adapta tu estancia</h4>
+        <h3 className='text-3xl lg:text-4xl my-10 tracking-wide w-full text-center capitalize font-extrabold'>Elegi entre todos los apartamentos</h3>
         </div>
         <div className="flex flex-wrap justify-center mt-[150px]">
         <div ref={bigCard.ref} className={`transition-all duration-1000 ${bigCard.inView ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
         <BigCard/>
         </div>
         <div id='guide' ref={accordions.ref} className={`flex flex-col transition-all duration-[2000ms] ease-in-out ${accordions.inView ? 'translate-y-[0vh] opacity-100' : 'translate-y-[20vh] opacity-0'} `}>
-        <AccordionCard title={'Neelum Valley'} price={'12000'} desc={'An exquisite tour of the Neelum valley'} img={mountains}   />
-        <AccordionCard title={'French Beach'} price={'15000'} desc={'Go swimming in the beautiful deep blue'} img={beach}   />
-        <AccordionCard title={'Swat River'} price={'18000'} desc={'Flowing from the glaciers of Hindi Kush'} img={river}   />
+        <AccordionCard title={'Neelum Valley'} price={'12$'} desc={'casa para 4'} img={mountains}   />
+        <AccordionCard title={'French Beach'} price={'15$'} desc={'casa para 2'} img={beach}   />
+        <AccordionCard title={'Swat River'} price={'18$'} desc={'depto centrico'} img={river}   />
         </div>
         </div>
         <div className='flex justify-center md:flex-row flex-col mt-20 mb-10 mx-10'>
           <form id='form' onSubmit={(e)=>submitFunc(e)} ref={heading2.ref} className={`flex flex-col items-start min-w-[300px] transition-all duration-[1500ms] ${heading2.inView ? 'opacity-100' : 'opacity-0'}`}>
-        <h4 className='text-xs lg:text-sm mt-10 mb-5 font-heading w-full tracking-[10px] font-semibold'>RESERVE NOW</h4>
-        <h3 className='text-3xl lg:text-4xl mb-10 tracking-wide w-full capitalize font-extrabold'>Book your tour with us now</h3>
-        <p className='max-w-[400px]'>Looking for an experience like never before? Book your tour with us today and let us contact you.</p>
+        <h4 className='text-xs lg:text-sm mt-10 mb-5 font-heading w-full tracking-[10px] font-semibold'>RESERVA AHORA</h4>
+        <h3 className='text-3xl lg:text-4xl mb-10 tracking-wide w-full capitalize font-extrabold'>Contactanos</h3>
+        <p className='max-w-[400px]'>Algun problema o pregunta? contactanos</p>
         <input required type="text" placeholder='Name' className='px-4 py-2 transition-all  text-black shadow-md w-full rounded-2xl placeholder:italic focus:outline-none border-2 border-transparent hover:border-primary focus:border-primary bg-stone-100 my-4 mt-10' />
         <input required type="date" placeholder='Preferred date' className='px-4 py-2 transition-all  text-black shadow-md w-full rounded-2xl placeholder:italic focus:outline-none border-2 border-transparent hover:border-primary focus:border-primary bg-stone-100 my-4 ' />
         <input required type="email" placeholder='Email' className='px-4 py-2 transition-all  text-black shadow-md w-full rounded-2xl placeholder:italic focus:outline-none border-2 border-transparent hover:border-primary focus:border-primary bg-stone-100 my-4' />
         <button className='my-4 px-6 py-2 rounded-2xl bg-secondary hover:bg-secondaryLighter text-white font-medium'>Submit</button> 
         <Alert className={`w-full ${showAlert ? 'block' : 'hidden'}`} severity="success">
         <AlertTitle>Success</AlertTitle>
-        Your booking has been made - <strong>We will contact you soon.</strong>
+        Tu consulta esta hecha <strong>Te contactamos pronto</strong>
         </Alert>
           </form>
           <Image height={1000} src={booking}/>
